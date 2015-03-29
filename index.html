@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+  <HTML>
+    <head>
+      <title> Alfia's notes </title>
+      <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+       <meta charset="utf-8"/>
+    </head>
+	<body>
+		<div class="large_box">
+			<div class="large_title">
+			<h1> The Basics of the Web and HTML</h1>
+			</div>
+		</div>
+		<div class="large_box">
+			<div class="lesson_highlights">
+				<h2>Lesson 1 Hignlights</h2>
+				<br><a href="#TLP"><b>I. Thinking like a programmer</b></a><br>
+				<br><a href="#WITWWW"><b>II. What is World Wide Web?</b></a><br>
+				<br><a href="#COWWW"> <b>III.Components of the WWW</b></a><br>
+				<br><a href="#HTML_markup"><b> IV. HTML markup</b></a><br>
+			</div>
+			<div class="lesson_notes">
+					
+	          <h2>Lesson 1 Notes - Introduction</h2>
+					<h3 ID="TLP"> I. Thinking like a programmer</h3>
+					<b> 1. Procedural Thinking </b>
+					 - creating a "procedure", which is a clear and unambiguous instruction for a computer to follow.
+					<br><b> 2. Abstract Thinking </b>
+					- finding similarity, or "generality" amongst seemingly different things.
+					It very impracticalto write a code for every little detail. The power of abstraction helps to avoid unnecessary repetition of work.
+					<br><b> 3. Systems Thinking </b>
+					 -breaking  a big problem down into smaller pieces. It involves creating a plan (often on paper) for how a program will work. It involves big-picture thinking and decision-making about a problem and how different pieces of a program can work together to solve it. If this is unclear now, don't worry! You'll understand what this means much more clearly by the end of the Nanodegree.
+					<br><b> 4. Technological Empathy </b> Computer empathy is the ability to understand what a computer is, how it works, and what it's good and bad at doing.
+					<br><b> 5. Debugging </b> - is a systematic process of identifying the cause of a computer program that doesn't work.
+					When a program doesn't work, it's because there is a mistake (also known as a "bug") somewhere in the computer code. Since these mistakes are an unavoidable part of programming, every good programmer has a system for fixing them and that system usually looks something like this:
+					<ul>
+						<li>   Collect evidence (what makes this program fail?)</li> 
+					    <li>   Generate theories (what may have caused this problem?)</li>
+					    <li>   Test those theories (if my theory is correct, how could I find out?)</li>
+					    <li>   Fix the problem</li>
+
+					</ul>
+	        
+	        
+			        <h3 ID="WITWWW"> II. What is World Wide Web?</h3>
+			        <em> World Wide Web </em> is a collection of HTML documents.
+			        <br><em>HTML</em> is Hyper Text Markup Language. This is a basis for almost each web page.
+			        <br> HTML pages are linked by <em>hyper-links</em>, which makes the Web web-like.
+			        <br>  Web was invented in 1990-th, and has something around 30 billion pages.
+
+					<h3 ID="COWWW"> III.Components of the World Wide Web</h3>
+					<ul>
+						<li><u>HTTP</u>- the main protocol of the Web</li>
+						<li><u>Servers</u> are computers that are optimized to sitting in the closets, rather than on the desktops, hosting files that make up the Web.</li>
+						<li><u>Internet</u> - the world's largest computer network</li>
+						<li><u>Browser</u> - a program that runs on a computer to display files that are found on the internet.</li>
+					</ul>
+					HTML is made up of the following:
+					<ul>
+						<li>	Text content (what you see on the page)</li>
+						<li>	mark-up  (how the content is arranged)</li>
+						<li>    other documents (eg images and videos)</li>
+						<li>    links to other pages</li>
+					</ul>
+					
+					<h3 ID="HTML_markup"> IV. HTML markup</h3>
+						<p><b>HTML tags</b>
+					<p>
+					&lt;opening tag&gt; Content (or other tags)&lt;/closing tag&gt; -
+					this whole thing is an element. <br>
+					&lt;b&gt; &lt;/b&gt; - the content will be bold.<br>
+					&lt;i&gt; &lt;/i&gt; or &lt;em&gt;&lt;/em&gt; - the content will be in italics.<br>
+					To make content both bold and italisized, nest one set of tags inside the other.
+					</p>
+					<br><b>HTML attributes</b>
+					<p>&lt;tag name_of_the_attribute = &quot;value&quot;&gt; &lt;/tag&gt;
+					<br>tags can have multiple attributes.
+					<br> anchor tag - &lt;a&gt; &lt;a href = &quot;www.reddit.com&quot;&gt; Derp &lt;/a&gt;
+					a - tag, href - attribute, www.reddit.com  - value of the attribute
+					<br>Anchor tag can also mark a spot on the HTML document (use &lt;a id="ID"&gt;, then use &lt;a href = &quot;ID&quot;&gt; Place to find &lt;/a&gt;)<br>
+					</p>
+					<br><b>Images</b>
+					<p>&lt;img scr = &quot;URL&quot; alt = &quot;text&quot;&gt;<br>
+					note that there is no closing tag for &lt;img&gt; (this is called a &quot;void tag&quot;,  a tag that does not have content, therefore  does not require a closing tag)
+					scr - source
+					alt - alternate (to display the text if image does not load)
+					<br> It is nice to include alt, some HTML browsers will complain if it is not there. Also, it is helpful for blind people.
+					</p>
+
+				</div>
+				</div>
+			<div class="large_box">
+				<div class="lesson_highlights">
+					<h2>Lesson 2 Hignlights</h2>
+					<br><a href="#IABE"> <b>I. Inline and block elements</b></a><br>
+					<br><a href="#TRBIB"><b>III.The relationship between indented HTML and boxes</b></a><br>
+					<br><a href="#DOM"> <b>II. The "tree-like structure" of HTML (DOM)</b></a><br>
+					<br><a href="#TE"> <b>IV. Text Editors (for programming)</b></a><br>
+				</div>
+				<div class="lesson_notes">
+						<h2>Lesson 2 Notes - Creating a Structured Document with HTML</h2>
+
+			        <h3 id="IABE"> <b>I. Inline and block elements</b></h3>
+			      <p>
+			        HTML elements are either <b>inline</b> or <b>block</b>.
+			        Block elements form an "invisible box" around the
+			        content inside of them. You can see the difference between these 2 types of elements using developer tools in the browser.
+			      </p>
+			      
+			         <h3 id="DOM"><b>II. The "tree-like structure" of HTML (DOM)</b> </h3>
+			      HTML elements can have other elements inside of them, creating a "tree-like structure".
+			        <br>
+			        In a browser, this structure shows up as a series of nested boxes.
+			      
+			      
+			        <h3 id="TRBIB">III.The relationship between indented HTML and boxes</h3>
+
+			        Looking at HTML document in a text editor, you can see that more indented an element is, the more
+			        deeply nested it's corresponding "box" is.
+			      
+			      
+			        <h3 id="TE">IV. Text Editors (for programming)</h3>
+			        <p>When writing code, programmers use special text editors (like
+			        Sublime Text or Atom). These editors make the programmer's
+			        life easier. For example, some text editors will automatically
+			        generate a closing HTML tag when you write an opening tag.
+			      	</p>
+				</div>
+			</div>
+			<div class="large_box">
+				<div class="lesson_highlights">
+					<h2>Lesson 3 Hignlights</h2>
+					<br><a href="#WTAS"><b>I. Where to add style.</b></a><br>
+					<br><a href="#Inh"><b>II. Inheritance.</b></a><br>
+	        <br><a href="#CTR"><b>III. Code, test and refine process.</b></a><br>
+	        <br><a href="#Ver"><b>IV. Verifying HTML and CSS.</b></a><br>
+
+				</div>
+				<div class="lesson_notes">
+					<h2>Lesson 3 Notes - Adding Style to HTML</h2>
+							<h3 id="WTAS">I. Where to add style.</h3><br>
+						 Styles can be defined in different places and are applied in the following order, with definitions   	further down the list overwriting previous definitions:
+						<ul>
+							<li>the default style of a browser (different browsers have slightly different styles)</li>
+							<li>stylesheet in a separate file (this is what you will be mostly using)</li>
+							<li>stylesheet inside HTML (this can be done for small projects but is not ideal)</li>
+							<li>inline style in an element (this can also be done but should be avoided)</li>
+						</ul>
+
+					<p><i>"Cascading"</i> means that rules are applied not only to the elements they directly match, but also to all of those elements' child elements. However, if a child element has multiple, overlapping rules defined for it, the more specific rule takes effect.<br>
+					You can also have several style sheets, refer to them in the head section of your HTML.<br>
+
+					CSS is like a "search and replace" tool: identify a class or a tag of the element and aplly style to all the instances of this class or tag.
+					</p>
+					<h3 id="Inh">II. Inheritance.</h3><br>
+					<p>Inheritance is a key feature in CSS, it is the mechanism by which properties are applied not only to a specified element, but also to its descendants. It is based on hierarchy of HTML elements. Descendant elements may inherit CSS property values from any ancestor element enclosing them. In general, descendant elements inherit text-related properties, but box-related properties are not inherited.<br>
+					<br><i> Inheritable </i> properties are:
+					color, font, letter-spacing, line-height, list-style, text-align text-indent, text-transform, visibility, white-space and word-spacing. Properties that cannot be inherited are background, border, display, float and clear, height and width, margin, min- and max-height and -width, outline, overflow, padding, position, text-decoration, vertical-align and z-index.<br>
+					Inheritance allows developers to write less CSS. It enhances faster-loading of web pages by users.<br>
+					</p>
+					<p>Useful articles on CSS selectors are here :<br><a href="http://css-tricks.com/how-css-selectors-work/"> http://css-tricks.com/how-css-selectors-work </a> <br> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference">https://developer.mozilla.org/en-US/docs/Web/CSS/Reference </a>
+					</p>
+	        <br>
+	        <h3 id="CTR">III. Code, test and refine process.</h3>
+	            <ol>
+	              <li>	You need to get the structure of the page. You should be able to do it from the design, by visually “boxifying” it. So – look for natural boxes.
+	              <li>	Look for repeated styles and semantic elements.</li>
+	              <li>	Write your HTML</li>
+	              <li>	Apply your styles (from biggest to smallest)</li>
+	              <li>	Fix the small things. Make necessary refinements and modifications to the page.</li>
+	            </ol>
+	          <br>
+	        Use development tools to refine – saves time and effort.
+	        
+	        <h3 id="Ver">IV. Verifying HTML and CSS.</h3><br>
+
+	        <p>To verify HTML use this <a href="http://validator.w3.org/#validate_by_input">link</a><br>
+	        To verify CSS use this <a href="http://jigsaw.w3.org/css-validator/#validate_by_input">link</a>
+	        </p>
+	      </div>
+	    </div>
+	    <div class="large_box">
+			<div class="large_title">
+			<h1>Introduction to "Serious" Programming</h1>
+			</div>
+		</div>
+		<div class="large_box">
+			<div class="lesson_highlights">
+				<h2>Lesson 1 Hignlights</h2>
+				<br><a href="#CPPL"><b>I. Computers, programs and programming languages</b></a><br>
+				<br><a href="#P"><b>II. Python</b></a><br>
+				<br><a href="#D"><b>III. Debugging</b></a><br>
+				<br><a href="#WRC"><b> IV.  Writing a readable code.</b></a><br>
+			</div>
+			<div class="lesson_notes">
+					
+	          <h2>Lesson 1 Notes - Telling computers what to do</h2>
+					<h3 ID="CPPL"> I. Computers, programs and programming languages</h3>
+						<br> <b>Computers</b>
+						<p> Are electronic devices that can store and process data by following instructions given to them in a program.</p>
+						<br><b>Programs</b>
+						<p>Computer programs are sequences of steps for the computers to follow. </p>
+						<br><b>Programming languages</b>
+						<p>Multiple languages, such as Fortran, Cobol, C++, Python</p>
+						We do not use natural languages for programming because of
+						<ol>
+							<li>Ambiguity</li>
+							<li>Verbosity</li>
+						</ol>
+					<h3 ID="P"> II. Python</h3>
+						<p>Python is on of programming languages. A Python Interpreter converts the programs written in a Python languate to a set of binary instructions that the computer can understand and execute.</p>
+							
+						<p>Python grammar for arithmetic expressions:<br>
+						Expression -> expression operator expression
+						For example: <br>
+						Expression -> number (2) operator (+, *,/) number (4)
+						Parenthesis around expressions indicate priority of this expression.
+						</p>
+
+					<h3 ID="D"> III. Debugging</h3>
+						
+						<p> Debugging is one of the five ways <a href="index.html""#TLP">programmers think</a>. Python requires code be written with a very specific syntax. This means that small typos can lead to program not running at all.<br>
+						The trick to dealing with programming mistakes (called "bugs") is not to avoid making them entirely, because it is impossible. The trick is to develop a system for finding and fixing them.<br>
+						HINT: It's often a good idea to start at the last line of the error message.
+						</p>
+			        <h3 ID="WRC"> IV.  Writing a readable code.</h3>
+			        <ol>
+			        
+						<li>	<b> What is a variable?</b></li>
+							 A variable can be assigned a name via an assignment statement:<br>
+									<p style=justified:center>name = expression</p>
+									
+						<br>
+						<li>	<b>What does it mean to assign a value to a variable?</b></li>
+						Assigning value to a variable is putting the value in a memory cell that has a name on it.<br>
+						<br>
+						<li>	<b>What is the difference between what the equals = means in math versus in programming.</b> What's the difference between this: 2 + 3 = 5 and this: my_variable = 5?</li>
+					</ol>
+			</div>
+		</div>
+		<div class="large_box">
+			<div class="lesson_highlights">
+				<h2>Lesson 2 Hignlights</h2>
+				<br><a href="#var"><b>I. Variables</b></a><br>
+				<br><a href="#str"><b>II. Strings</b></a><br>
+			</div>
+			<div class="lesson_notes">
+					
+	          <h2>Lesson 2 Notes - Variables and Strings</h2>
+					<h3 ID="var"> I. Variables  </h3>
+						<p>Values can be assigned to variables, using a <span class="code"> = </span> sign. This eauals sign is different from an arithmetic equals sign, which is Python actually looks like this: <span class="code"> == </span>. For example, the difference between the equals sign means in <span class="code">2 + 3 = 5</span> and <span class="code">my_variable = 5</span> is:
+				        <p>
+				          Here <span class="code">2 + 3 = 5</span>, the equals sign means "is the same as".
+				        </p>
+				        <p>
+				          And here <span class="code">my_variable = 5</span>, the equals sign means "is assigned the value of".
+				        </p>
+
+						<p>Variables are a convenient way to store data, they are helpful in remembering where the data are stored (when using mnemonic variable names), and they help to save time when data are operated on.</p>
+						<br>The values assigned to the variables can be:</p>
+							<ul>
+								<li> Strings (a sequence of characters in either single or double quotes, but not mixed). For example, <span class="code">"3"</span> and <span class="code">"3"</span> are strings, so <span class="code">"3"+"3"</span> will result in <span class="code">33</span></li><br>
+								<li> Integers (round numbers). For example, <span class="code">3</span> and <span class="code">3</span> are integers, so <span class="code">3+3</span> will result in <span class="code">6</span></li><br>
+								<li> Floats (numbers with decimal points).For example, <span class="code">3.0</span> is a float, <span class="code">3</span> is an integer, so <span class="code">3.0+3</span> will result in <span class="code">6.0</span>. If one of the variables is a float, the result of an arithmetic operation will be a float.</li>
+							</ul>
+							
+						<p> Using variables is a way to name values. There are several name rules in Python:</p>
+							<ul>
+								<li>You can use any letter</li> 
+								<li>You can use the special characters “_"</li> 
+								<li>You can use any number, provided you do not start with it.</li>  
+								<li>White spaces and signs with special meanings in Python, as “+” and “-” are not allowed.</li> 
+								<li>Python variable names are case-sensitive</li> 
+								<li>A convention is not to start a variable name with a capital charachter (even though this is not a hard rule)</li>
+							</ul>
+					<h3 ID="str"> II. Strings </h3>
+						<p>There is a reason for the strings to have either double or single quotes. Sometimes a meaningful text withing the string can have double quotes: <span class="code">variable='Print"Hello"'</span>. In this case, single quotes are appropriate. The string can also have a single quote within: <span class="code">variable2="It's a nice day!"</span> - in this case double quotes can be used. 
+						In addition, triple quotes can be used for creating multi-line strings:</p> 
+						<span class="code">print """I am a string<br> 
+						that takes up <br>
+						multiple lines"""<br>
+
+						print '''I am also a string<br>
+						that makes up multiple lines!'''<br> </span>
+						
+							<ul>
+								<li> Strings can be operated on. For example an <u>operator</u> "+" will <b>concatenate</b> two or more strings (just paste them one after another). Or "*" will multiply a string (for example name="5"*4, print name will give 5555).</li><br>
+								<li>Strings can also be indexed, which means we can extract a part of the sequence of the characters. For example string variable ="udacity", variable[0] will return "u", variable[1+1] will return "a" etc. The index value can be a negative one, where -1 is the last character, -2 is the one before the last, etc.</li><br>										
+								<li> Selecting subsequences of strings -  instead of having just one number is square brackets, we can have two, separated by a colon. The first number will indicate a start, and the second - a stop indices. The returned value will be a string between these numbers, including the start, and not including the stop number. Leaving an empty space instead of the stop number will include all the charachters from the start to the end. Inversley, leaving out the start number, the selection will include all the characters from the beginning to the stop.</li><br>
+								<li>Using a "find" method in strings.
+								<img class="screenshot" src="images/findmethod.jpg" alt = "find method"> 
+								A <b>method</b> is a built-in procedure, provided by Python. 
+								When using the .find method, the output is the first number of the search string. If the search string is not found, the output will be -1. To make .find even more powerful, we can add a second "parameter". A <b>parameter</b> is what goes inside the parentheses. In this code: "text".find("t") the "t" is a parameter; in "text".find("t", 1) there are two parameters, "t" and 1. The second parameter (a number) indicates a position in the string, <u>after</u> which the .find will look for a search string </li><br>
+							</ul>				
+			</div>	
+		</div>
+		
+		<div class="large_box">
+			<div class="lesson_highlights">
+				<h2>Lesson 3 Highlights </h2>
+				<br><a href="#FD"><b>I. Function Definition</b></a><br>
+				<br><a href="#MUF"><b>II. Making and Using Functions</b></a><br>
+				<br><a href="#SF"><b> III. Summary of the functions lesson.</b></a><br>
+				<br><a href="#AHP"><b> IV. Automate HTML using Python.</b></a><br>
+			</div>
+			<div class="lesson_notes">
+				<h2>Lesson 3 Notes - Input -> Function -> Outputs</h2>
+					<h3 ID="FD"> I. Function definition</h3>
+						<p>	A <b>function</b> or a <b>procedure</b> is a sequence of actions. A function has a <u>name</u> (type), by which one can "call" the function later.  A function also has an expression in parenthesis, which is called the <u>parameters</u> (or argument) of the function. The argument is  an <u>input </u> to the function, an it can be either a value, a variable, or another function. 
+						It is common to say that a function “takes” an argument and “returns” a result. The result is called the <u>return value</u>.
+						Note that a function does not change the value of the used variable, but creates a changed copy of it. So it is important to use a <u> return</u> of the changed value in order not to lose it.
+						</p>
+						<p>Functions are very useful tools that allow programmers avoid repetitions and write efficient code.</p>
+				
+					<h3 ID="MUF"> II. Making and Using Functions.</h3>
+						<p>	To make a function, one starts with <span class="code">def</span>, followed by the name of the function (use mnemonic names, avoid reserved names) and parameters of the function in parenthesis. When the function is called (used), the parameters are replaced by actual values.
+						</p>
+						<p>	As an example, to create a function that calculates the conversion of inches to cantimeters, we would do the following: </p>
+								
+						<span class="code">def conver(inch):</span>
+    						<p style=text-indent:50px;><span class="code"> cm=inch*2.54</span><p>
+   							<p style=text-indent:50px;><span class="code">return cm</span></p>
+						<p> To call a function, write the name with the value in parentheses.</p> 
+							<p style=text-indent:10px;><span class="code"> print conver(4.0)<br>
+							>>>>10.16</span><p>
+					<h3 ID="SF"> III. Summary of the functions lesson</h3>
+						 To summurize:
+
+						 <p><b>On the first line of your function definition.</b></p>
+						 <ul>
+							<li>You must begin the line with def (lowercase).</li>
+							<li>After def you must give a function name (in this case it will be udacify.</li>
+							<li>Next, you must have a set of parentheses with the required parameters inside.</li>
+							<li>The line must end with a : colon.</li>
+						</ul>
+						<p><b>In the body of the function</b></p>
+						<ul>
+							<li>Every line in the function must be indented.</li>
+							<li>If you want your function to produce output, it must end with a return statement.</li>
+						</ul>
+
+						<p><b>To call a function:</b></p>
+						<ul>
+							<li>The function name,</li> 
+							<li>followed by...an open paren (, </li>
+							<li>followed by...the values for the required parameters, </li>
+							<li>followed by...</li>
+							<li>...a closed paren ).
+							<li>To display the results of a function call use print command.</li>
+						</ul>
+					<h3 ID="AHP"> IV. Automate HTML using Python</h3>
+						<img class="screenshot" src="http://i.imgur.com/FF6GuIR.png" alt = "example of HTML-generating Python code">	
+			</div>
+		</div>	
+		<div class="large_box">
+			<div class="lesson_highlights">
+				<h2>Lesson 4 Hignlights</h2>
+				<br><a href="#MD>"<b>I. Making decisions.</b></a><br>
+			</div>
+			<div class="lesson_notes">
+					
+	          <h2>Lesson 4 Notes - Decisions and Repetitions - 'if' and 'while'.</h2>
+					<h3 ID="MD"> I. Making decisions.</h3>
+						
+						<p><b>Comparison operators</b>, such as less than, more than, less or equal, more or equal,  == (equal), != not equal to, work on numbers. The output is not a number, but a Boolean value, which can be ether "True" or "False". </p>
+
+						<img class=screenshot src="images/comparison.jpg" alt = "example of comparison operators in Python">
+											
+			</div>	
+		</div>	
+		<div class="large_box">
+			<div class="lesson_highlights">
+				<h2>Lesson 5 Hignlights</h2>
+				<br><a href="#SvsL"><b>I. Differences and similarities between strings and lists.</b></a><br>
+				<br><a href="#Mut"><b>II. Mutation.</b></a><br>
+				<br><a href="#Ali"><b>III. Aliasing.</b></a><br>
+				<br><a href="#OLO"><b>IV. Other list operations.</b></a><br>
+				<br><a href="#LOL"><b>V. Loops on lists.</b></a><br>
+			</div>
+			<div class="lesson_notes">
+					
+	          <h2>Lesson 5 Structured Data</h2>
+					<h3 ID="SvsL"> I. Differences and similarities between strings and lists.</h3>
+						<p>Strings and lists are similar, though lists are more poweful. Here are where they are similar and different:</p>
+						<ul>
+							<li> Both are sequences, though a String is a sequence of characters, while list is a sequence of anything, including strings and other lists.</li>
+							<li> Both can be assigned to a variable; string - in quotes, list - in square brackets.</li>
+							<li> Sub-sequences of both can be accessed using an index in square brackets. They return strings and lists, corresponding to the origin</li>
+						</ul>
+						<img class=screenshot src="images/strings_and_lists.jpg" alt = "Differences and similarities between strings and lists">
+						<p> The general grammar for creation of a list is to have a name for a list, assignment sign, square brackets, and the expressions of the list, separated by a comma.</p>
+					<h3 ID="Mut"> II. Mutation.</h3>
+						<p>Lists support mutation, while strings do not(they are "immutable"). When we concotinate strings, this does not modify an existing string, but creates a brand new one. Mutation allows to change a selected expression within a list, without creating a new one:</p>	
+						<img class="screenshot" src="images/mutation.jpg"	alt="example of mutation">	
+					<h3 ID="Ali"> III. Aliasing.</h3>
+						<p>When we refer to the same object using different ways, it is called aliasing. For example, we have a variable 'p' that is assigned to a list. If then we assign a variable 'q' to the variable 'p', whatever we do with the list will be reflected in both p and q. However, if we assign p to a new object, the value of q will remain the same, as before.</p>	
+					<h3 ID="OLO"> IV. Other list operations.</h3>
+						<h4>Append</h4>	
+							<p>Append is like a procedure, but it is a method. It mutates the list after execution. </p>
+							<img class="screenshot" src="images/append.jpg" alt="Example of how append works">
+						<h4>Plus (+) operator</h4>	
+							<p>Plus works similar to concotination operation of strings. It produces a new list after execution, and it does not mutate any of the input lists. </p>
+							<img class="screenshot" src="images/plus.jpg" alt="Example of how a plus works">
+						<h4>Length (len) operator</h4>
+							<p>len operator works on any object that is a collection of things, such as strings and lists.</p>
+						<h4>Index and in on lists</h4>
+						    <img class="screenshot" src="images/index_and_in.jpg" alt="index and in on loops">
+							<img class="screenshot" src="images/len.jpg" alt="how len works">
+					<h3 ID="LON"> V. Loops on lists.</h3>
+						<h4>While on lists.</h4>
+							<p> While works on lists the same way as on strings. We have a test statement in the block, which will return the the while until the test is no longer true: </p>
+							<img class="screenshot" src="images/while.jpg" alt= "While on Loops">
+						<h4>For on lists.</h4>
+							<p> For in loop on lists goes through each element of the list ('name' introduces a new variable for the list expressions), performing an action, specified in a block of the loop:</p>
+							<img class="screenshot" src="images/for-in.jpg" alt="For on loops">
+
+ 
+			</div>	
+		</div>	
+	</body>
+  </HTML>

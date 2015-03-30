@@ -1,0 +1,308 @@
+The Basics of the Web and HTML
+
+Lesson 1 Notes - Introduction
+
+I. Thinking like a programmer
+
+1. Procedural Thinking - creating a "procedure", which is a clear and unambiguous instruction for a computer to follow. 
+2. Abstract Thinking - finding similarity, or "generality" amongst seemingly different things. It very impracticalto write a code for every little detail. The power of abstraction helps to avoid unnecessary repetition of work. 
+3. Systems Thinking -breaking a big problem down into smaller pieces. It involves creating a plan (often on paper) for how a program will work. It involves big-picture thinking and decision-making about a problem and how different pieces of a program can work together to solve it. If this is unclear now, don't worry! You'll understand what this means much more clearly by the end of the Nanodegree. 
+4. Technological Empathy Computer empathy is the ability to understand what a computer is, how it works, and what it's good and bad at doing. 
+5. Debugging - is a systematic process of identifying the cause of a computer program that doesn't work. When a program doesn't work, it's because there is a mistake (also known as a "bug") somewhere in the computer code. Since these mistakes are an unavoidable part of programming, every good programmer has a system for fixing them and that system usually looks something like this:
+Collect evidence (what makes this program fail?)
+Generate theories (what may have caused this problem?)
+Test those theories (if my theory is correct, how could I find out?)
+Fix the problem
+II. What is World Wide Web?
+
+World Wide Web is a collection of HTML documents. 
+HTML is Hyper Text Markup Language. This is a basis for almost each web page. 
+HTML pages are linked by hyper-links, which makes the Web web-like. 
+Web was invented in 1990-th, and has something around 30 billion pages.
+III.Components of the World Wide Web
+
+HTTP- the main protocol of the Web
+Servers are computers that are optimized to sitting in the closets, rather than on the desktops, hosting files that make up the Web.
+Internet - the world's largest computer network
+Browser - a program that runs on a computer to display files that are found on the internet.
+HTML is made up of the following:
+Text content (what you see on the page)
+mark-up (how the content is arranged)
+other documents (eg images and videos)
+links to other pages
+IV. HTML markup
+
+HTML tags
+
+<opening tag> Content (or other tags)</closing tag> - this whole thing is an element. 
+<b> </b> - the content will be bold.
+<i> </i> or <em></em> - the content will be in italics.
+To make content both bold and italisized, nest one set of tags inside the other.
+
+
+HTML attributes
+<tag name_of_the_attribute = "value"> </tag> 
+tags can have multiple attributes. 
+anchor tag - <a> <a href = "www.reddit.com"> Derp </a> a - tag, href - attribute, www.reddit.com - value of the attribute 
+Anchor tag can also mark a spot on the HTML document (use <a id="ID">, then use <a href = "ID"> Place to find </a>)
+
+Images
+<img scr = "URL" alt = "text">
+note that there is no closing tag for <img> (this is called a "void tag", a tag that does not have content, therefore does not require a closing tag) scr - source alt - alternate (to display the text if image does not load) 
+It is nice to include alt, some HTML browsers will complain if it is not there. Also, it is helpful for blind people.
+
+Lesson 2 Notes - Creating a Structured Document with HTML
+
+I. Inline and block elements
+
+HTML elements are either inline or block. Block elements form an "invisible box" around the content inside of them. You can see the difference between these 2 types of elements using developer tools in the browser.
+
+II. The "tree-like structure" of HTML (DOM)
+
+HTML elements can have other elements inside of them, creating a "tree-like structure". 
+In a browser, this structure shows up as a series of nested boxes.
+III.The relationship between indented HTML and boxes
+
+Looking at HTML document in a text editor, you can see that more indented an element is, the more deeply nested it's corresponding "box" is.
+IV. Text Editors (for programming)
+
+When writing code, programmers use special text editors (like Sublime Text or Atom). These editors make the programmer's life easier. For example, some text editors will automatically generate a closing HTML tag when you write an opening tag.
+
+Lesson 3 Notes - Adding Style to HTML
+
+I. Where to add style.
+
+
+Styles can be defined in different places and are applied in the following order, with definitions further down the list overwriting previous definitions:
+the default style of a browser (different browsers have slightly different styles)
+stylesheet in a separate file (this is what you will be mostly using)
+stylesheet inside HTML (this can be done for small projects but is not ideal)
+inline style in an element (this can also be done but should be avoided)
+"Cascading" means that rules are applied not only to the elements they directly match, but also to all of those elements' child elements. However, if a child element has multiple, overlapping rules defined for it, the more specific rule takes effect.
+You can also have several style sheets, refer to them in the head section of your HTML.
+CSS is like a "search and replace" tool: identify a class or a tag of the element and aplly style to all the instances of this class or tag.
+
+II. Inheritance.
+
+
+Inheritance is a key feature in CSS, it is the mechanism by which properties are applied not only to a specified element, but also to its descendants. It is based on hierarchy of HTML elements. Descendant elements may inherit CSS property values from any ancestor element enclosing them. In general, descendant elements inherit text-related properties, but box-related properties are not inherited.
+
+Inheritable properties are: color, font, letter-spacing, line-height, list-style, text-align text-indent, text-transform, visibility, white-space and word-spacing. Properties that cannot be inherited are background, border, display, float and clear, height and width, margin, min- and max-height and -width, outline, overflow, padding, position, text-decoration, vertical-align and z-index.
+Inheritance allows developers to write less CSS. It enhances faster-loading of web pages by users.
+Useful articles on CSS selectors are here :
+http://css-tricks.com/how-css-selectors-work 
+https://developer.mozilla.org/en-US/docs/Web/CSS/Reference
+
+
+III. Code, test and refine process.
+
+You need to get the structure of the page. You should be able to do it from the design, by visually “boxifying” it. So – look for natural boxes.
+Look for repeated styles and semantic elements.
+Write your HTML
+Apply your styles (from biggest to smallest)
+Fix the small things. Make necessary refinements and modifications to the page.
+
+Use development tools to refine – saves time and effort.
+IV. Verifying HTML and CSS.
+
+
+To verify HTML use this link
+To verify CSS use this link
+
+Introduction to "Serious" Programming
+
+Lesson 1 Notes - Telling computers what to do
+
+I. Computers, programs and programming languages
+
+
+Computers
+Are electronic devices that can store and process data by following instructions given to them in a program.
+
+
+Programs
+Computer programs are sequences of steps for the computers to follow.
+
+
+Programming languages
+Multiple languages, such as Fortran, Cobol, C++, Python
+
+We do not use natural languages for programming because of
+Ambiguity
+Verbosity
+II. Python
+
+Python is on of programming languages. A Python Interpreter converts the programs written in a Python languate to a set of binary instructions that the computer can understand and execute.
+
+Python grammar for arithmetic expressions:
+Expression -> expression operator expression For example: 
+Expression -> number (2) operator (+, *,/) number (4) Parenthesis around expressions indicate priority of this expression.
+
+III. Debugging
+
+Debugging is one of the five ways programmers think. Python requires code be written with a very specific syntax. This means that small typos can lead to program not running at all.
+The trick to dealing with programming mistakes (called "bugs") is not to avoid making them entirely, because it is impossible. The trick is to develop a system for finding and fixing them.
+HINT: It's often a good idea to start at the last line of the error message.
+
+IV. Writing a readable code.
+
+What is a variable?
+A variable can be assigned a name via an assignment statement:
+name = expression
+
+
+What does it mean to assign a value to a variable?
+Assigning value to a variable is putting the value in a memory cell that has a name on it.
+
+What is the difference between what the equals = means in math versus in programming. What's the difference between this: 2 + 3 = 5 and this: my_variable = 5?
+Lesson 2 Notes - Variables and Strings
+
+I. Variables
+
+Values can be assigned to variables, using a = sign. This eauals sign is different from an arithmetic equals sign, which is Python actually looks like this: == . For example, the difference between the equals sign means in 2 + 3 = 5 and my_variable = 5 is:
+
+Here 2 + 3 = 5, the equals sign means "is the same as".
+
+And here my_variable = 5, the equals sign means "is assigned the value of".
+
+Variables are a convenient way to store data, they are helpful in remembering where the data are stored (when using mnemonic variable names), and they help to save time when data are operated on.
+
+
+The values assigned to the variables can be:
+Strings (a sequence of characters in either single or double quotes, but not mixed). For example, "3" and "3" are strings, so "3"+"3" will result in 33
+
+Integers (round numbers). For example, 3 and 3 are integers, so 3+3 will result in 6
+
+Floats (numbers with decimal points).For example, 3.0 is a float, 3 is an integer, so 3.0+3 will result in 6.0. If one of the variables is a float, the result of an arithmetic operation will be a float.
+Using variables is a way to name values. There are several name rules in Python:
+
+You can use any letter
+You can use the special characters “_"
+You can use any number, provided you do not start with it.
+White spaces and signs with special meanings in Python, as “+” and “-” are not allowed.
+Python variable names are case-sensitive
+A convention is not to start a variable name with a capital charachter (even though this is not a hard rule)
+II. Strings
+
+There is a reason for the strings to have either double or single quotes. Sometimes a meaningful text withing the string can have double quotes: variable='Print"Hello"'. In this case, single quotes are appropriate. The string can also have a single quote within: variable2="It's a nice day!" - in this case double quotes can be used. In addition, triple quotes can be used for creating multi-line strings:
+
+print """I am a string
+that takes up 
+multiple lines"""
+print '''I am also a string
+that makes up multiple lines!'''
+Strings can be operated on. For example an operator "+" will concatenate two or more strings (just paste them one after another). Or "*" will multiply a string (for example name="5"*4, print name will give 5555).
+
+Strings can also be indexed, which means we can extract a part of the sequence of the characters. For example string variable ="udacity", variable[0] will return "u", variable[1+1] will return "a" etc. The index value can be a negative one, where -1 is the last character, -2 is the one before the last, etc.
+
+Selecting subsequences of strings - instead of having just one number is square brackets, we can have two, separated by a colon. The first number will indicate a start, and the second - a stop indices. The returned value will be a string between these numbers, including the start, and not including the stop number. Leaving an empty space instead of the stop number will include all the charachters from the start to the end. Inversley, leaving out the start number, the selection will include all the characters from the beginning to the stop.
+
+Using a "find" method in strings.  find method A method is a built-in procedure, provided by Python. When using the .find method, the output is the first number of the search string. If the search string is not found, the output will be -1. To make .find even more powerful, we can add a second "parameter". A parameter is what goes inside the parentheses. In this code: "text".find("t") the "t" is a parameter; in "text".find("t", 1) there are two parameters, "t" and 1. The second parameter (a number) indicates a position in the string, after which the .find will look for a search string
+
+Lesson 3 Notes - Input -> Function -> Outputs
+
+I. Function definition
+
+A function or a procedure is a sequence of actions. A function has a name (type), by which one can "call" the function later. A function also has an expression in parenthesis, which is called the parameters (or argument) of the function. The argument is an input to the function, an it can be either a value, a variable, or another function. It is common to say that a function “takes” an argument and “returns” a result. The result is called the return value. Note that a function does not change the value of the used variable, but creates a changed copy of it. So it is important to use a return of the changed value in order not to lose it.
+
+Functions are very useful tools that allow programmers avoid repetitions and write efficient code.
+
+II. Making and Using Functions.
+
+To make a function, one starts with def, followed by the name of the function (use mnemonic names, avoid reserved names) and parameters of the function in parenthesis. When the function is called (used), the parameters are replaced by actual values.
+
+As an example, to create a function that calculates the conversion of inches to cantimeters, we would do the following:
+
+def conver(inch):
+cm=inch*2.54
+
+return cm
+
+To call a function, write the name with the value in parentheses.
+
+print conver(4.0)
+>>>>10.16
+
+III. Summary of the functions lesson
+
+To summurize:
+On the first line of your function definition.
+
+You must begin the line with def (lowercase).
+After def you must give a function name (in this case it will be udacify.
+Next, you must have a set of parentheses with the required parameters inside.
+The line must end with a : colon.
+In the body of the function
+
+Every line in the function must be indented.
+If you want your function to produce output, it must end with a return statement.
+To call a function:
+
+The function name,
+followed by...an open paren (,
+followed by...the values for the required parameters,
+followed by...
+...a closed paren ).
+To display the results of a function call use print command.
+IV. Automate HTML using Python
+
+example of HTML-generating Python code
+Lesson 4 Notes - Decisions and Repetitions - 'if' and 'while'.
+
+I. Making decisions.
+
+Comparison operators, such as less than, more than, less or equal, more or equal, == (equal), != not equal to, work on numbers. The output is not a number, but a Boolean value, which can be ether "True" or "False".
+
+example of comparison operators in Python
+Lesson 5 Structured Data
+
+I. Differences and similarities between strings and lists.
+
+Strings and lists are similar, though lists are more poweful. Here are where they are similar and different:
+
+Both are sequences, though a String is a sequence of characters, while list is a sequence of anything, including strings and other lists.
+Both can be assigned to a variable; string - in quotes, list - in square brackets.
+Sub-sequences of both can be accessed using an index in square brackets. They return strings and lists, corresponding to the origin
+Differences and similarities between strings and lists
+The general grammar for creation of a list is to have a name for a list, assignment sign, square brackets, and the expressions of the list, separated by a comma.
+
+II. Mutation.
+
+Lists support mutation, while strings do not(they are "immutable"). When we concotinate strings, this does not modify an existing string, but creates a brand new one. Mutation allows to change a selected expression within a list, without creating a new one:
+
+example of mutation
+III. Aliasing.
+
+When we refer to the same object using different ways, it is called aliasing. For example, we have a variable 'p' that is assigned to a list. If then we assign a variable 'q' to the variable 'p', whatever we do with the list will be reflected in both p and q. However, if we assign p to a new object, the value of q will remain the same, as before.
+
+IV. Other list operations.
+
+Append
+
+Append is like a procedure, but it is a method. It mutates the list after execution.
+
+Example of how append works
+Plus (+) operator
+
+Plus works similar to concotination operation of strings. It produces a new list after execution, and it does not mutate any of the input lists.
+
+Example of how a plus works
+Length (len) operator
+
+len operator works on any object that is a collection of things, such as strings and lists.
+
+Index and in on lists
+
+index and in on loops  how len works
+V. Loops on lists.
+
+While on lists.
+
+While works on lists the same way as on strings. We have a test statement in the block, which will return the the while until the test is no longer true:
+
+While on Loops
+For on lists.
+
+For in loop on lists goes through each element of the list ('name' introduces a new variable for the list expressions), performing an action, specified in a block of the loop:
+
+For on loops
